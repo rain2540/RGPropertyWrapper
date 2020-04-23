@@ -15,6 +15,7 @@
 		B7A66A272451E19400F32005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A66A252451E19400F32005 /* LaunchScreen.storyboard */; };
 		B7A66A322451E19500F32005 /* RGPropertyWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A66A312451E19500F32005 /* RGPropertyWrapperTests.swift */; };
 		B7A66A3D2451E19500F32005 /* RGPropertyWrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A66A3C2451E19500F32005 /* RGPropertyWrapperUITests.swift */; };
+		B7A66A4B2451F1A600F32005 /* RGPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A66A4A2451F1A600F32005 /* RGPropertyWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7A66A382451E19500F32005 /* RGPropertyWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGPropertyWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A66A3C2451E19500F32005 /* RGPropertyWrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGPropertyWrapperUITests.swift; sourceTree = "<group>"; };
 		B7A66A3E2451E19500F32005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A66A4A2451F1A600F32005 /* RGPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGPropertyWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B7A66A192451E19000F32005 /* RGPropertyWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				B7A66A4C2451F25C00F32005 /* RGPropertyWrapper */,
 				B7A66A1A2451E19000F32005 /* AppDelegate.swift */,
 				B7A66A1C2451E19000F32005 /* SceneDelegate.swift */,
 				B7A66A1E2451E19000F32005 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				B7A66A3E2451E19500F32005 /* Info.plist */,
 			);
 			path = RGPropertyWrapperUITests;
+			sourceTree = "<group>";
+		};
+		B7A66A4C2451F25C00F32005 /* RGPropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B7A66A4A2451F1A600F32005 /* RGPropertyWrapper.swift */,
+			);
+			path = RGPropertyWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A66A1F2451E19000F32005 /* ViewController.swift in Sources */,
+				B7A66A4B2451F1A600F32005 /* RGPropertyWrapper.swift in Sources */,
 				B7A66A1B2451E19000F32005 /* AppDelegate.swift in Sources */,
 				B7A66A1D2451E19000F32005 /* SceneDelegate.swift in Sources */,
 			);
