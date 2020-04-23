@@ -9,7 +9,10 @@
 import Foundation
 
 
-struct RGPropertyWrapper {
+public typealias RGPW = RGPropertyWrapper
+
+
+public struct RGPropertyWrapper {
     
     @propertyWrapper
     public struct UserDefault<T> {
