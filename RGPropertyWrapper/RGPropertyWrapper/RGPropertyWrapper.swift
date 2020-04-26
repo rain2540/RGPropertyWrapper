@@ -32,6 +32,7 @@ public struct RGPropertyWrapper {
             self.key = key
             self.defaultValue = defaultValue
         }
+
     }
 
 
@@ -55,6 +56,35 @@ public struct RGPropertyWrapper {
             self.characterSet = characterSet
             self.wrappedValue = wrappedValue
         }
+
+    }
+
+
+    @propertyWrapper
+    struct Replace {
+
+        static let original = "original"
+        static let replace = "replace"
+
+        private var storage: String!
+        private let rules: Array<[String: String]>
+
+        var wrappedValue: String {
+            get { storage }
+            set {
+                var res = ""
+                rules.forEach {
+                    res = newValue.replacingOccurrences(of: $0[Replace.original]!, with: $0[Replace.replace]!)
+                }
+                storage = res
+            }
+        }
+
+        init(wrappedValue: String, rules: Array<[String: String]>) {
+            self.rules = rules
+            self.wrappedValue = wrappedValue
+        }
+
     }
     
 }
