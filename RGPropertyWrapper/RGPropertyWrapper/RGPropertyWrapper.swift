@@ -33,5 +33,28 @@ public struct RGPropertyWrapper {
             self.defaultValue = defaultValue
         }
     }
+
+
+    @propertyWrapper
+    struct Trimmed {
+
+        private var storage: String!
+        private let characterSet: CharacterSet
+
+        var wrappedValue: String {
+            get { storage }
+            set { storage = newValue.trimmingCharacters(in: characterSet) }
+        }
+
+        init(wrappedValue: String) {
+            self.characterSet = .whitespacesAndNewlines
+            self.wrappedValue = wrappedValue
+        }
+
+        init(wrappedValue: String, characterSet: CharacterSet) {
+            self.characterSet = characterSet
+            self.wrappedValue = wrappedValue
+        }
+    }
     
 }
