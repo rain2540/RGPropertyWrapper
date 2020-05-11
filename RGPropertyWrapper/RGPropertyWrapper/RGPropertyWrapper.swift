@@ -13,9 +13,11 @@ public typealias RGPW = RGPropertyWrapper
 
 
 public struct RGPropertyWrapper {
-    
+
+    /// UserDefaults 存取
     @propertyWrapper
     public struct UserDefault<T> {
+
         let key: String
         let defaultValue: T
 
@@ -36,6 +38,7 @@ public struct RGPropertyWrapper {
     }
 
 
+    /// 去除字符串中的某些字符
     @propertyWrapper
     struct Trimmed {
 
@@ -60,6 +63,7 @@ public struct RGPropertyWrapper {
     }
 
 
+    /// 字符替换
     @propertyWrapper
     struct Replace {
 
