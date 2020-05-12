@@ -15,6 +15,6 @@ struct TestModel {
     var storeValue: Int
 
     @RGPW.Trimmed
-    var trim: String
+    var trim: String = "  1 2 3  "
 
 }
