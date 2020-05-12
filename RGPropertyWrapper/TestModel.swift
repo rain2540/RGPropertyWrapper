@@ -14,4 +14,7 @@ struct TestModel {
     @RGPW.UserDefault(key: "Store", defaultValue: 0)
     var storeValue: Int
 
+    @RGPW.Trimmed
+    var trim: String
+
 }
