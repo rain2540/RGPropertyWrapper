@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let testModel = TestModel()
+        
+        print(testModel.storeValue)
+        print(testModel.trim)
+        print(testModel.replace)
     }
 
 
