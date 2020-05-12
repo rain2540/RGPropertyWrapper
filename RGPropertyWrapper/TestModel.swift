@@ -17,4 +17,7 @@ struct TestModel {
     @RGPW.Trimmed
     var trim: String = "  1 2 3  "
 
+    @RGPW.Replace(rules: [[RGPW.Replace.original: "=", RGPW.Replace.replace: "-"]])
+    var replace: String = "1=2=3"
+
 }
